@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -38,6 +42,10 @@ p {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.banner-logo{
+    border-radius: 3rem;
 }
 
 #arrow i {
@@ -302,7 +310,7 @@ section#welcome_Sec p {
 
 /*explore sec*/
 
-#explore-fiji {
+#explore-it {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/explore-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -381,9 +389,9 @@ input[type=text],
 select,
 textarea {
     width: 100%;
-    color: #00a8c5;
+    color: rgb(255, 255, 255);
     padding: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #3d3d3d80;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -430,7 +438,7 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(32, 61, 61)
 }
 
 .explore-content-par {
@@ -512,12 +520,14 @@ section#gallery {
     width: 360px;
     height: 300px;
     object-fit: cover;
+    border-radius: 1rem;
     transition: all 0.5s ease;
 }
 
 .gallery_product img:hover {
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.7;
+    border-radius: 1rem;
     transform: scale(1.1, 1.1);
 }
 
@@ -857,7 +867,7 @@ footer {
         margin-top: 40px;
     }
 
-    #explore-fiji {
+    #explore-it {
         padding: 50px 0;
     }
 
